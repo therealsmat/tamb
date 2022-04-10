@@ -1,0 +1,19 @@
+<div class="widget-wrapper"> 
+ <div class="footer-widget-2">
+   <h5>Featured Posts</h5>
+  {{#get 'posts' limit="4" filter="featured:true" as |recent|}}
+  {{#foreach recent}}
+   <div class="recent-post clearfix">
+     <div class="recent-post-img feature-post-img float-left"><img src="{{#if feature_image}} {{img_url feature_image}} {{else}} /assets/images/recent-post-img3.jpg {{/if}}" alt="{{title}}"/></div>
+     <div class="recent-post-title float-left">
+        <a href="{{url}}">{{title}}</a>
+        <ul class="recent-meta list-inline">
+          <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true">{{date published_at format="DD MMM Y"}}</i></li>
+          <li class="list-inline-item"><i class="fa fa-book" aria-hidden="true">{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</i></li>
+        </ul>
+     </div>
+   </div>
+   {{/foreach}}
+   {{/get}}
+ </div>
+</div>

@@ -1,0 +1,37 @@
+    <div class="post-article-style-1 clearfix">
+	{{#if feature_image}}
+       <div class="post-featured bg-image" style="background-image:url({{img_url feature_image}});"> 
+           <a href="{{url}}"><div class="post-image"></div></a>
+        </div>
+	  {{/if}}
+        <div class="post-title">
+            <a href="{{url}}"><h4>{{title}}</h4></a>
+            <p>{{excerpt words="35"}}</p>
+        </div>
+        <div class="post-share">
+             <ul class="post-count list-inline float-left">
+              <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i>{{date published_at format="DD MMM Y"}}</li>
+              <li class="list-inline-item"><i class="fa fa-user" aria-hidden="true"></i>{{author}}</li>
+             {{#if tags}} <li class="list-inline-item"><i class="fa fa-tags" aria-hidden="true"></i>{{tags limit="2"}}</li> {{/if}}
+            </ul>
+            <div class="share-button float-right">
+                <button type="button" class="social-toggle"><i class="fa fa-share-alt" aria-hidden="true"></i> {{t "Share this"}}</button>
+                <div class="social-networks">
+                    <ul>
+                        <li class="social-facebook">
+                            <a href="https://facebook.com/sharer.php?url={{url absolute='true'}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social-twitter">
+                            <a href="http://twitter.com/share?text={{encode title}}&amp;url={{url absolute='true'}}"  onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social-gplus">
+                            <a href="http://plus.google.com/share?text={{encode title}}&amp;url={{url absolute='true'}}" onclick="window.open(this.href, 'google-plus', 'width=550,height=235');return false;"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+  
+

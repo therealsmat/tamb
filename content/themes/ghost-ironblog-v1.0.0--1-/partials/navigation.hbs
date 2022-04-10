@@ -1,0 +1,111 @@
+ {{!-- <nav class="navbar-custom">
+    <div id="cssmenu" class="float-right">
+       <ul>
+          {{#foreach navigation }}
+            <li class="{{#if current}} active {{else}} menu-item {{/if}}"><a href="{{url}}">{{label}}</a></li>
+          {{/foreach}}
+          <!-- For Dropdown Menu -->
+<!--            <li class="has-sub">
+             <a href="#"">lifestyle <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+             <ul>
+                <li><a href="#">lifestyle</a></li>
+                <li><a href="#">lifestyle</a></li>
+                <li class="has-sub">
+                   <a href="#">lifestyle 1 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                   <ul>
+                      <li><a href="#">Sub lifestyle</a></li>
+                      <li><a href="#">Sub lifestyle</a></li>
+                      <li><a href="#">sub lifestyle</a></li>
+                      <li><a href="#">sub lifestyle</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">lifestyle</a></li>
+                <li><a href="#">lifestyle</a></li>
+             </ul>
+          </li> -->
+          <!-- End Dropdown Menu -->
+          <li><a href="#" data-toggle="modal" data-target="#themeix_search"><i class="fa fa-search"></i></a></li>
+       </ul>
+    </div>
+ </nav>
+
+ --}}
+ <style>
+    .nav-link{
+      color: black;
+      font-family: Montserrat;
+      font-weight:600;
+      padding-top: 27px; 
+      float:right;
+    }
+    button{ 
+      background-color: #177931; 
+      color: white; 
+
+   }
+   .navbar-brand{
+      width: 200px;
+   }
+   .header-banner{
+      position: relative;
+   }
+   .header-banner h4{
+      font-family: Montserrat;
+      font-size: ;
+      font-weight: 600;
+      color: white;
+      position: absolute;
+      z-index: 2; 
+      padding: 45px 0 70px 150px;
+      
+
+      
+   }
+      .header-banner img{
+         position: absolute;
+         z-index: 1;
+
+      }
+      span{
+      font-weight: 400;
+      }
+      form.example input[type=text]{
+   
+         border-radius: 3px;
+         width: 80%;
+         border: 1px solid black;
+      }
+      form.example input:hover {
+         border: 2px solid black;
+      }
+      form.example button{
+         border: none;
+         width: 10%;
+         padding: 0 3px 0 3px;
+      }
+      
+ </style>
+<div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto ml-md-5" >
+      <li class="nav-item active">
+        <a class="nav-link mx-md-4" >Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-md-1" >About Us</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link mx-md-4" >Blog</a>
+      </li> 
+    </ul>
+    <span class="navbar-text">
+    <ul class="navbar-nav mt-1" >
+      <li class="nav-item">
+        <a class="nav-link mt-2"  >Sign in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" >
+      <button class="border-0 btn m-0 mb-2"> Report an Incident</button></a>
+      </li>
+    </ul>
+    </span>
+  </div>

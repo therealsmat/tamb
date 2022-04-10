@@ -1,0 +1,17 @@
+ {{#author}}
+   <!-- Start Page Heading -->
+   <section class="themeix-title p-100 header-style-2" style="background-image:url({{#if cover_image}}{{img_url cover_image}} {{else}} /assets/images/author-bg.jpg {{/if}});">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-10 mx-auto">
+               <div class="title-section text-center">
+                  <h1>{{name}}</h1>
+                  <p> {{plural ../pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}} </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End Page Heading -->
+   {{/author}}
+

@@ -1,0 +1,29 @@
+<div class="author-widget">
+    <div class="widget-title">
+        <h5>About Me</h5>
+    </div>
+    <div class="author-wrapper text-center">
+        <div class="author-info">
+          {{#foreach posts limit="1"}}
+           {{#author}}
+            <img src="{{#if profile_image}} {{img_url profile_image}} {{else}} /assets/images/author.png {{/if}}" alt="{{name}}" />
+            <a href="{{url}}">
+                <h5>{{name}}</h5>
+            </a>
+            <p>{{#if bio}} {{bio}} {{else}} It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using {{/if}}</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="{{facebook_url}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="{{twitter_url}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="{{website}}"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            {{/author}}
+          {{/foreach}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{{!< default}} 
+ {{> 'author_page_header'}}
+ <!-- Start article -->
+  <section class="themeix-article p-100">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-sm-12">
+				<div class="main-content">
+					{{#foreach posts limit="9"}}
+						{{> "post_layout"}}
+					{{/foreach}}
+					{{pagination}}
+				</div>
+				</div>
+			<div class="col-md-4 col-sm-12">
+			{{> 'sidebar'}}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End article -->

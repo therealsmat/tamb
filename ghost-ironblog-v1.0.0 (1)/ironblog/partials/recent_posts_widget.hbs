@@ -1,0 +1,17 @@
+<div class="recent-post-widget">
+        <div class="widget-title">
+        <h5>{{t "Latest Posts"}}</h5>
+    </div>
+    {{#foreach posts limit="5"}}
+    <div class="recent-post clearfix">
+        <div class="recent-post-img float-left"><img src="{{#if feature_image}} {{img_url feature_image}} {{else}} /assets/images/recent-post-img.jpg {{/if}}" alt="{{title}}"/></div>
+        <div class="recent-post-title float-left">
+            <a href="{{url}}">{{title}}</a>
+            <ul class="recent-meta list-inline">
+                <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> {{date published_at format="DD MMM Y"}}</li>
+                <li class="list-inline-item"><i class="fa fa-book" aria-hidden="true"></i> {{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</li>
+            </ul>
+        </div>
+    </div>
+    {{/foreach}}
+</div>

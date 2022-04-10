@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="{{lang}}">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>{{meta_title page=(t " (Page %)")}}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!--call favicon icon-->
+		<link rel="icon" href="{{asset "images/favicon.png"}}" type="image/x-icon"/>
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}" />
+		<!-- Custom styles -->
+		<link rel="stylesheet" href="{{asset "css/font-awesome.min.css"}}" />
+		<!-- Flatmenu style -->
+		<link rel="stylesheet" href="{{asset "css/flatmenu.min.css"}}" />
+		<!-- Syntax Heighlighter -->
+		<link rel="stylesheet" href="{{asset "css/monokai.css"}}" />
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="{{asset "css/animate.min.css"}}">
+		<!-- Owl Carousel -->
+		<link rel="stylesheet" href="{{asset "css/owl.carousel.min.css"}}">
+		<!-- Custom styles -->
+		<link href="{{asset "css/style.css"}}" rel="stylesheet" />
+		<!-- Custom responsive styles -->
+		<link href="{{asset "css/responsive.css"}}" rel="stylesheet" />
+		<!--call lora font stylesheet-->
+		<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">   {{ghost_head}}   
+   </head>
+   <body class="{{body_class}}"> 
+   
+     {{> 'header'}}
+
+     {{{body}}}
+
+     {{> 'footer'}}
+
+      <!-- Call plugin File -->
+      <script src="{{asset "js/jquery.min.js"}}"></script>
+      <script src="{{asset "js/popper.min.js"}}"></script>
+      <script src="{{asset "js/bootstrap.min.js"}}"></script>
+      <script src="{{asset "js/flatmenu.min.js"}}"></script>
+      
+      <script src="{{asset "js/sticky.fixed.min.js"}}"></script>
+      <script src="{{asset "js/jquery.fitvids.min.js"}}"></script>
+      <script src="{{asset "js/jquery.easing.js"}}"></script>
+      <script src="{{asset "js/highlight.pack.js"}}"></script>
+      <script src="{{asset "js/owl.carousel.min.js"}}"></script>
+      <script src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
+      <script src="{{asset "js/custom.js"}}"></script>
+
+      {{ghost_foot}}
+      
+   </body>
+</html>

@@ -1,0 +1,33 @@
+ <nav class="navbar-custom">
+    <div id="cssmenu" class="float-right">
+       <ul>
+          {{#foreach navigation }}
+            <li class="{{#if current}} active {{else}} menu-item {{/if}}"><a href="{{url}}">{{label}}</a></li>
+          {{/foreach}}
+          <!-- For Dropdown Menu -->
+<!--            <li class="has-sub">
+             <a href="#"">lifestyle <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+             <ul>
+                <li><a href="#">lifestyle</a></li>
+                <li><a href="#">lifestyle</a></li>
+                <li class="has-sub">
+                   <a href="#">lifestyle 1 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                   <ul>
+                      <li><a href="#">Sub lifestyle</a></li>
+                      <li><a href="#">Sub lifestyle</a></li>
+                      <li><a href="#">sub lifestyle</a></li>
+                      <li><a href="#">sub lifestyle</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">lifestyle</a></li>
+                <li><a href="#">lifestyle</a></li>
+             </ul>
+          </li> -->
+          <!-- End Dropdown Menu -->
+          <li><a href="#" data-toggle="modal" data-target="#themeix_search"><i class="fa fa-search"></i></a></li>
+       </ul>
+    </div>
+ </nav>
+
+
+

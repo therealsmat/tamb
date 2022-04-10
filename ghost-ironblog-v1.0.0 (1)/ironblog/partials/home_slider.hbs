@@ -1,0 +1,28 @@
+
+<!-- Start Home Carousel -->
+<section class="home-carousel">
+	<div class="block no-padding">
+		<div class="row">
+			<div class="col-md-12">
+			   <div class="carousel-wrapper">
+                {{#get 'posts' filter="featured:true"}}
+                {{#foreach posts limit="4"}}
+				 <div class="slider">
+				<div class="slider-bg" style="{{#if feature_image}} background-image:url({{ img_url feature_image }}); {{else}} background-image:url(/assets/images/001.jpg);{{/if}}">
+					<div class="slider-content">
+		                <div class="content">
+		                    <h2>{{title}}</h2>
+		                    <p>{{excerpt words="30"}}</p>
+                            <a href="{{url}}" class="btn btn-secondary hover-rpl"> {{t "Read More"}}</a>
+		                </div>
+					  </div>
+				   </div>
+				  </div>
+                  {{/foreach}}
+                  {{/get}}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Home Carousel -->

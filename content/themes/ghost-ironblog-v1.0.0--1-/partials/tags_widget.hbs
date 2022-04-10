@@ -1,0 +1,12 @@
+<div class="widget-wrapper"> 
+<div class="footer-widget-2 tag-widget">
+  <h5>tag cloud</h5>
+  <ul class="list-inline">
+  {{#get 'tags'}}
+    {{#foreach tags}}
+      <li class="list-inline-item"><a class="hover-rpl btn" href="{{url}}">{{name}}</a></li>
+    {{/foreach}}
+  {{/get}}  
+  </ul>
+</div>
+</div>

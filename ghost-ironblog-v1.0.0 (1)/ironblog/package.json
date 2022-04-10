@@ -1,0 +1,17 @@
+{
+	"name": "iblog",
+	"description": "iblog is a responsive blogging ghost template",
+	"demo":"http://iblog/themeix.com",
+	"version": "1.0.0",
+	"engines": {
+        "ghost": ">=1.2.0"
+    },
+	"author": {
+		"name": "themeix",
+		"url": "http://themeix.com",
+		"email": "themeix@gmail.com"
+	},
+	"config": {
+		"posts_per_page": 10
+	}
+}

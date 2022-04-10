@@ -1,0 +1,16 @@
+<div class="main-content">
+  {{#foreach posts include="tags,author"}}
+    {{#unless featured}}
+      {{> "post_layout"}}
+      {{/unless}}
+    {{/foreach}}
+   
+    <div class="pagination">
+        {{pagination}}
+    </div>
+    <div class="post-ads my-5">
+        <a href="http://themeix.com"><img src="/assets/images/ads-img.jpg" alt="Buy at Themeix" /></a>
+    </div>
+</div>
+
+

@@ -1,0 +1,22 @@
+{{!< default}}
+
+   {{#post}}
+   
+     {{> 'page_header' }}
+      <!-- Start content -->
+      <div class="themeix-content p-100">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 mx-auto">
+                  <div class="single-content page">
+                     {{#if feature_image}}
+                        <div class="single-img"><img src="{{img_url feature_image}}" alt="{{title}}"/></div>
+                     {{/if}}
+                      <p>{{content}}</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    <!-- End content -->
+  {{/post}}

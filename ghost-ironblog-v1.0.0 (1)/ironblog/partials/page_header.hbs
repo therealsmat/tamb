@@ -1,0 +1,17 @@
+<!-- Start Page Heading -->
+<section class="themeix-title page-wraper p-100">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-10 mx-auto">
+            <div class="title-section text-center">
+               <h1>{{title}}</h1>
+               <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="{{@blog.url}}">Home</a></li>
+                  <li class="breadcrumb-item active">{{#if tags}}{{tags limit="1"}}{{else}} <a href="{{@blog.url}}">Post</a>{{/if}}</li>
+               </ol>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- End Page Heading -->
